@@ -5,6 +5,3 @@ from main import app
 client = TestClient(app)
 
 
-def test_index_route():
-    response = client.get('/items/Hol')
-    assert response.status_code == 200

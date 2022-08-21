@@ -1,6 +1,5 @@
 import requests
 from fastapi import FastAPI, Response, status
-
 from pydantic import BaseModel # adicionar en los imports en el main.py
 
 app = FastAPI()
