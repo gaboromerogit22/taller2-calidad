@@ -10,7 +10,7 @@ def test_index_route():
     data1={
     "internalId": "3",
     "name": "Harry",
-    "last_name": "Poteer",
+    "last_name": "Potter",
     "phone": "(702) 315-7822 x250"
     }
     response = client.post('infoUsers', data=json.dumps(data1), headers={'Content-Type': 'application/json'})
@@ -21,7 +21,7 @@ def test_index_route():
     data2={
     "internalId": "3",
     "name": "Harry",
-    "last_name": "Poteer",
+    "last_name": "Potter",
     "phone": "(702) 315-7822 x250",
     "idUsuario": "3"
     }
@@ -32,7 +32,7 @@ def test_index_route():
 
     data2={
     "name": "SAM",
-    "last_name": "Poteer",
+    "last_name": "Potter",
     }
     response = client.put('infoUsers/3', data=json.dumps(data2), headers={'Content-Type': 'application/json'})
     assert response.status_code == 200
